@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel='stylesheet' type='text/css' href='calculator.css'>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="row">
+            <h1 id='title'>CalcMeister</h1>
+            <input id="resultBar" maxlength="15"/>
+            <button class="clear" onclick="clearFields()">C</button>
+            <button class="clear" onclick="delLastChar()">DEL</button>
+        </div>
+            
+        <div class="row">
+            <button onclick="displayNums('1')">1</button>
+            <button onclick="displayNums('2')">2</button>
+            <button onclick="displayNums('3')">3</button>
+            <button class="operator" onclick="displayOps('*')">x</button>
+            <button class="operator" onclick="displayOps('/')">/</button>
+        </div>
+            
+        <div class="row">
+            <button onclick="displayNums('4')">4</button>
+            <button onclick="displayNums('5')">5</button>
+            <button onclick="displayNums('6')">6</button>
+            <button class="operator" onclick="displayOps('+')">+</button>
+            <button class="operator" onclick="displayOps('-')">-</button>
+        </div>
+
+        <div class="row">
+            <button onclick="displayNums('7')">7</button>
+            <button onclick="displayNums('8')">8</button>
+            <button onclick="displayNums('9')">9</button>
+            <button class="operator" onclick="divideByX()">1/x</button>
+            <button class="operator" onclick="changeSign()">+/-</button>
+        </div>
+
+        <div class="row">
+            <button onclick="displayNums('0')">0</button>
+            <button onclick="makeDecimal('.')">.</button>
+            <button onclick="countPercent()">%</button>
+            <button class="equalSign" onclick="countResult()">=</button>
+        </div>
+    </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  <script src="calculator.js"> </script>
+</body>
+
+</html>

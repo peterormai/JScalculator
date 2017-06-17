@@ -1,0 +1,89 @@
+body {
+    background-image: url(http://www.planwallpaper.com/static/images/6790904-free-background-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#title {
+    color: white;
+    margin-top: 20px;
+}
+
+.clear {
+    background-color: black;
+    border: ridge;
+    color: white;
+    width: 110px;
+}
+
+.calculator {
+    text-align: center;
+    margin-top: 5%;
+    width: 320px; 
+    border: ridge;
+    border-color: darkred;
+    border-width: 10px;
+    border-radius: 30px;
+    margin-left: 35%;
+    background-color: darkred;
+    opacity: 1;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+    border: ridge;
+    background-color: silver;
+}
+
+#resultBar {
+    width: 260px;
+    height: 30px;
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 5px;
+    border: ridge;
+    border-color: darkred;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+.operator {
+    background-color: green;
+}
+
+.equalSign {
+    background-color: green;
+    width: 110px;
+}
+/*Hover effects*/
+.row button:hover {
+	color: white;
+}
+
+.row button.operator:hover {
+	color: white;
+}
+
+.row button.clear:hover {
+	color: darkred;
+}
+
+/* Simulating "pressed" effect on active state */
+.row button:active {
+	background: #BCAFAF;
+}
+
+.row button.operator:active {
+	background: #abb850;
+}
+
+.row button.clear:active {
+	background: #2B2727;
+}
